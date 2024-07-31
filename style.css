@@ -1,13 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-
-.body {
+* {
     background-color: #F3F5FC;
-    font-family: "Inter", sans-serif;
-    display: flex;
+}
+/* posicionamiento del logo*/
+.logo{
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
-.logo {
-    margin: 40px;
-    justify-content: left;
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* configuracion de la entrada de texto para que sea similar al de figma*/
+.text-area{
+    border: none;
+    margin-top: 90px;
+    text-transform: lowercase;
+    color: #0A3871;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+/* se quita el contorno y se establece el color de la letra*/
+.text-area:focus{
+    outline:none;
+}
+::placeholder{
+    color: #0A3871;
+}
+
+.instruction{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    
+}
+
+.buttons{
+    display: flex;
+    margin-top: 18px;
+    gap: 24px;
+}
+
+.buttons_encriptar{
+    border: 1px solid #0A3871;
+    background-color: #0A3871;
+    border-radius: 24px;
+    color: #FFF;
+    cursor: pointer;
+    width: 328px;
+    height: 67px;
+    font-size: larger;
+    font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.36px;
+text-align: center;
+
+}
+
+.buttons_desencriptar{
+    border: 1px solid #0A3871;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    width: 328px;
+    height: 67px;
+    font-size: larger;
+    font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.36px;
+text-align: center;
+}
+
+.result-container{
+    position: relative;
+}
+
+.result{
+    background: #FFF;
+    /*Establezco imagen de fondo*/
+    background-image: url("./assets/Screenshot.png");
+    background-position: center;
+    border: none;
+    border-radius: 32px;
+    color: #495057;
+    position: fixed;
+    margin-left: 98px;
+    margin-top: 20px;
+    width: 400px;
+    height: 740px;
+    background-repeat: no-repeat;
+    padding: 32px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+
+}
+
+.result:focus{
+    outline: none;
+}
+
+.copy{
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    width: 328px;
+    height: 67px;
+    font-size: larger;
+    font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.36px;
+text-align: center;
+position: absolute;
+margin-left: 160px;
+margin-top: 700px;
+background-color: #FFF;
+}
+
+.copy.hidden {
+    display: none;
 }

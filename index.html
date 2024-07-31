@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Encriptador</title>
+    <title>Encriptador de Texto ONE</title>
 </head>
-<body class="body">
-    <header class="header">
-        <img class="logo" src="assets/Logo.png" alt="logo alura">
+<body>
+    <header>
+        <img src="./assets/Logo.png" alt="Logo de Alura" class="logo">
     </header>
-    <main>
-        <article class="principal">
-            <input class="principal__inupt" type="text" id="textInput" placeholder="Digite el texto que desea encriptar">
-            <input class="principal__button1" type="button" onclick="encriptado()" value="Encriptar">
-            <input class="principal__button2" type="button" value="Desencriptar">
-        </article>
-        <article class="result">
-        <!--Aca se colocara el texto encriptado-->
-        <input type="text" readonly id="textOutput" placeholder="Texto encriptado">
-        <img class="result__img" src="content/1.png">
-        <input class="result__copy-button" type="button" value="Copiar">
-        </article>
+    <main class="content">
+        <section>
+            <textarea class="text-area" placeholder="Ingrese el texto aqui" cols="30" rows="10"></textarea>
+            <div>
+                <h6 class="instruction">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="buttons">
+                <button class="buttons_encriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="buttons_desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <div class="result-container">
+                <textarea class="result" name="" id="" cols="20" rows="10"></textarea>
+                <button class="copy">Copiar</button>
+            </div>
+        </section>
     </main>
-    <footer class="footer">
-        <p>Aca va la informacion mia</p>
-    </footer>
-    <script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>
