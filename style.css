@@ -186,6 +186,7 @@
         padding: 15px;
         max-width: 100%;
         justify-content: center;
+        align-items: center;
     }
 
     .text-area {
@@ -197,14 +198,36 @@
 
     .buttons {
         flex-direction: column;
+        align-items: center;
     }
 
     .result {
         height: 186px;
         width: 327px;
-        padding: 0%;
+        padding: 10px 10px 0 10px;
         background-position:bottom;
     }
 
+}
 
+@media (min-width: 768px) and (max-width: 1023px){
+    .logo{
+        height: 50px;
+        padding-left: 0px;
+    }
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .text-area {
+        height: 400px;
+    }
+
+    .result {
+        height: 200px;
+        width: 688px;
+        padding: 10px 10px 0 10px;
+        background-position:50% 100%;
+    }
 }
